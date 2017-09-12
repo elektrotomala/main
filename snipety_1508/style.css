@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+}
+
+h3 {
+    color: #3c4141;
+    background-color: beige;
+}
+
+.kwadrat_zew {
+    background-color: yellow;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    /*    padding: 10px;*/
+    /*    display: inline-flex;*/
+    display: inline-block;
+}
+
+.kwadrat_wew {
+    background-color: pink;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    /*margin: auto;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-bullseye {
+    transition-duration: 2s;
+    font-size: 5em;
+    color: gold;
+}
+
+.fa-bullseye:hover {
+    color: aquamarine;
+}
+
+#teczowy {
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+}
+
+#lista_nienumerowana>ul>li {
+    display: block;
+}
+
+input[type="text"] {
+    color: blue;
+    background-color: bisque;
+}
+
+/*
+input[placeholder~="nazwisko"] {
+    color: red;
+    background-color: bisque;
+}
+*/
+
+#linki_kolorowe {
+    background-color: aliceblue;
+}
+
+a[href*=".doc"] {
+    color: chartreuse;
+}
+
+footer {
+    background-color: rgba(24, 180, 180, 0.44);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+#stopkowe_linki>li {
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+}
+
+#stopkowe_linki>li>a {
+    color: burlywood;
+}
+
+#sarandyjski {
+    margin-left: 30%;
+    width: 500px;
+    height: 220px;
+    border: 2px solid blue;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/af/Panoramic_view_of_Saranda_from_L%C3%ABkur%C3%ABsi_Castle.jpg");
+    background-size: 100%;
+    background-position: center;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#sarandyjski:hover {
+    background-size: 150%;
+}
+
+q {
+    display: block;
+    margin-left: 10px;
+}
+
+blockquote,
+h3 {
+    margin-left: 10px;
+}
+
+q:lang(en) {
+    quotes: '*' '*';
+}
+
+.fa-heart {
+    animation: sercowa;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes sercowa {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2)
+    }
+}
+
+#kurtyna {
+    background-color: red;
+    z-index: 10;
+    animation: kurtyna_w_gore;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kurtyna_w_gore {
+    0% {
+        width: 100vw;
+        height: 100vw;
+        z-index: 10;
+    }
+    100% {
+        height: 0vw;
+        z-index: 10;
+        background-color: red;
+    }
+}
+
+#paralax {
+    width: 100%;
+    height: 280px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#rotujacy {
+    background-color: blueviolet;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    margin-left: 100px;
+    transition-duration: 2s;
+    text-align: center;
+    line-height: 150px;
+}
+
+#rotujacy:hover {
+    transform: rotateY(180deg);
+}
+
+#z_4_divami {
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+#inside_1 {
+    background-color: dimgray;
+}
+
+#inside_2 {
+    background-color: #27b49e;
+}
+
+#inside_3 {
+    background-color: #4d3532;
+}
+
+#inside_4 {
+    background-color: pink;
+}
+
+.inside_section {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    /*    margin: auto;*/
+    float: left;
+    transition-duration: 1.0s;
+    transition-timing-function: linear;
+}
+
+.inside_section:hover {
+    transform: scaleX(2);
+}
+
+.loader {
+    border: 50px solid rgba(245, 234, 234, 0.83);
+    border-radius: 50%;
+    border-top: 50px solid red;
+    /*    border-bottom: 50px solid red;*/
+    width: 100px;
+    height: 100px;
+    animation: kreciola 3s linear infinite;
+}
+
+@keyframes kreciola {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
