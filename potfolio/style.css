@@ -1,0 +1,428 @@
+/* resetujemy */
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(98, 101, 123, 0.17);
+    /*    bottom: 0;*/
+    border-bottom: 0;
+}
+
+.navbar-default {
+    background-color: rgba(250, 235, 215, 0.22);
+}
+
+
+/*Zwróć uwagę na transition - spowalnia zmianę aktywnego i nieaktywnego linka*/
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    color: #afaeae;
+    font-weight: 900;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    /*    background-image: url(obrazy/tapeta1.jpg);*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(obrazy/tapeta.jpg);
+    background-position: center;
+}
+
+#header_inner {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    position: absolute;
+    color: cornsilk;
+}
+
+section {
+    padding: 60px;
+}
+
+
+
+#uslugi {
+    text-align: center;
+}
+
+#uslugi .fa {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 3em;
+    transition: all 0.4s;
+}
+
+#uslugi .fa:hover {
+    transform: rotate(360deg);
+    background-color: #fff;
+    color: #0ed8d6;
+}
+
+#przycisk_naglowka_2 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+
+}
+
+.header_inner_2 {
+    text-align: center;
+}
+
+.single_portfolio_item {}
+
+.portfolio_image_container {
+    overflow: hidden;
+}
+
+.portfolio_image {
+    overflow: hidden;
+    height: 200px;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.portfolio_image:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.portfolio_item_mask {
+    font-size: 3em;
+    color: bisque;
+    height: 100%;
+    line-height: 5;
+    opacity: 0;
+}
+
+.portfolio_item_mask.fa-plus {}
+
+.portfolio_item_mask:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+    opacity: 2;
+}
+
+z_obrazkami {
+    text-align: center;
+}
+
+#portfolio_item_1 {
+    background-image: url(obrazy/mali_1.jpg);
+}
+
+#portfolio_item_2 {
+    background-image: url(obrazy/mali_2.jpg);
+}
+
+#portfolio_item_3 {
+    background-image: url(obrazy/mali_3.jpg);
+}
+
+#portfolio_item_4 {
+    background-image: url(obrazy/mali_4.jpg);
+}
+
+#portfolio_item_5 {
+    background-image: url(obrazy/mali_5.jpg);
+}
+
+#portfolio_item_6 {
+    background-image: url(obrazy/mali_6.jpg);
+}
+
+#main-nav.scrolled {
+    background-color: rgba(214, 125, 24, 0.3);
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio .single_portfolio_item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#portfolio .single_portfolio_item .portfolio_image_container {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4 ease-in-out;
+}
+
+#team_item_1 {
+    background-image: url(obrazy/mali_5.jpg);
+}
+
+#team_item_2 {
+    background-image: url(obrazy/mali_5.jpg);
+}
+
+#team_item_3 {
+    background-image: url(obrazy/mali_5.jpg);
+}
+
+#team_sekcja .team_image {
+    text-align: center;
+    overflow: hidden;
+        background-size: cover;
+    background-position: center;
+    transition: all 0.4 ease-in-out;
+}
+
+.team_image:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.team_image {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.single_team_item {
+    position: relative;
+    
+    
+}
+
+.team_image_container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    /*        background-size: cover;*/
+}
+
+.spolecznosciowe > a > i {
+    margin: 5px;
+    font-size: 3em;
+}
+
+
+#pole_tekstowe {
+    height: 100%;
+}
+
+/*dodaję cudzy css*/
+
+
+section#contact {
+    background-color: #222222;
+    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section {
+    padding: 30px 0PX;
+}
+section#contact .section-heading {
+    color: white;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+.gellary_bg_none img{
+	width: 100%;
+	height: 250px;
+}
+section#contact :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+section#contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+section#contact :-ms-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.about_our_company{
+    text-align: center;
+}
+.about_our_company h1{
+    font-size: 25px;
+}
+.titleline-icon {
+    position: relative;
+    max-width: 100px;
+    border-top: 4px double #F99700;
+    margin: 20px auto 20px;
+}
+.titleline-icon:after {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'FontAwesome';
+    content: "\f141";
+    font-size: 20px;
+    line-height: 1;
+    color: #F99700;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+}
+
+
+#kontakt2 {
+    
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.ytimg.com/vi/4HeU7btJtYU/maxresdefault.jpg);
+}
+
+
+
+#kontakt2 h2, #kontakt2 p {
+    color: #ffffff;
+}
+
+#kontakt2 input:not([type="submit"]),
+#kontakt2 textarea {
+    width: 100%;
+    border: 0px 100%;
+}
+
+#kontakt2 input,
+#kontakt2 textarea {
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+}
+
+
+
+#kontakt2 input:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#kontakt2 input[type="submit"] {
+    margin-top: 30px;
+}
+
+#kontakt2 ::-webkit-input-placeholder {
+  color: #777;
+}
+#kontakt2 ::-moz-placeholder {
+  color: #777;
+}
+#kontakt2 :-ms-input-placeholder {
+  color: #777;
+}
+#kontakt2 :-moz-placeholder {
+  color: #777;
+}
+
+#main-footer {
+    padding: 10px 0;
+}
+
+#main-footer nav,
+#main-footer .copyrights {
+    line-height: 50px;
+    margin: 0;
+}
+
+#main-footer nav,
+#main-footer .social-icons {
+    text-align: center;
+}
+
+main-footer nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main-footer nav ul li a {
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.4s;
+    }
+
+
+main-footer nav ul li a:hover {
+    color: #0ed445;
+}
+
+/*
+
+Zadanie domowe w pliku responsive.css: 
+do 768px
+
+zmień kolor tła dla main-nav i main-nav.scrolled na biały;
+zmień kolor linków w navie na #oed8d6, na hoover #777 linki przyklej do prawej strony ul;
+zmień kolor belek burgera (.icon-bar) na #oed8d6
+
+W sekcji kontakt2 odsuń marginesem poszczególne kolumny (margin-bottom)
+
+footer - wszystko na text-align: center zmniejsz na ul li
+
+do 480px
+zmień font-size dla h1, h2/h3 w header
+
+*/
+
+
+
+
