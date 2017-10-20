@@ -1,0 +1,21 @@
+
+@keyframes animki {
+   0% {
+       transform: translate3d(45deg,56deg,77deg);
+    }
+    
+    50%{
+        color: aqua;
+        transform: scale(2);
+            }
+    100%{
+        transform: matrix3d(3);        
+        color: crimson;
+    }
+}
+
+div.w3-container h3:hover {
+animation-name: animki;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
