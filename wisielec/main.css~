@@ -1,0 +1,7 @@
+div {
+border: solid red 5px; 
+width: 400px; 
+height: 200px
+color: #d43d3d;
+}
+
