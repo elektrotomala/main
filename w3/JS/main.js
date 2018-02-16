@@ -4,9 +4,9 @@ $("nav").click(function(){
     
 });
 
-$("#liczby").click(function(){
-   $(this).css("background","yellow");
-});
+// $("#liczby").click(function(){
+//   $(this).css("background","yellow");
+// });
 
 
 
